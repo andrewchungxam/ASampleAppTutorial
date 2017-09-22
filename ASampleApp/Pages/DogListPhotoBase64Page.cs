@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
 using ASampleApp.Models;
 using ASampleApp.ViewModels;
 using ASampleApp.ViewModels.Helper;
-using Xamarin.Forms;
 
 namespace ASampleApp.Pages
 {

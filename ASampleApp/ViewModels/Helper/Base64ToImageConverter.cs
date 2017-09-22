@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Globalization;
 using System.IO;
+using System.Globalization;
+
 using Xamarin.Forms;
 
 namespace ASampleApp.ViewModels.Helper

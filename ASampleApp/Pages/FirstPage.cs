@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
+using Microsoft.Azure.Mobile.Crashes;
+
 using ASampleApp.BlobStorage;
 using ASampleApp.Pages;
-using Microsoft.Azure.Mobile.Crashes;
-using Xamarin.Forms;
+
 namespace ASampleApp
 {
 	public class FirstPage : BaseContentPage<FirstViewModel>

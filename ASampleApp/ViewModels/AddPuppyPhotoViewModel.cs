@@ -1,10 +1,13 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using ASampleApp.CosmosDB;
+using System.Threading.Tasks;
+
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+
 using Xamarin.Forms;
+
+using ASampleApp.CosmosDB;
 
 namespace ASampleApp
 {

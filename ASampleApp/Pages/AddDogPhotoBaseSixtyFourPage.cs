@@ -3,11 +3,12 @@ using System.IO;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-using ASampleApp.ViewModels;
 using Xamarin.Forms;
 
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+
+using ASampleApp.ViewModels;
 using ASampleApp.ViewModels.Helper;
 
 namespace ASampleApp.Pages

@@ -1,12 +1,15 @@
-﻿using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Blob;
-using System.Threading.Tasks;
-using System;
+﻿using System;
 using System.IO;
-using Xamarin.Forms;
 using System.Reflection;
-using Microsoft.WindowsAzure.Storage.Auth;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+
 using Plugin.Media.Abstractions;
+
+using Microsoft.WindowsAzure.Storage;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage.Auth;
 
 namespace ASampleApp.BlobStorage
 {

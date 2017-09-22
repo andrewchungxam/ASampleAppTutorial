@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Collections.Generic;
+
 using SQLite;
 
 using ASampleApp.Models;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace ASampleApp.Data
 {

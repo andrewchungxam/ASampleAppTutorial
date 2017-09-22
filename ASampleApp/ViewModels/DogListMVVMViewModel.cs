@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using ASampleApp.Models;
-using System.Collections.ObjectModel;
-using System.Windows.Input;
-using Xamarin.Forms;
 using System.Diagnostics;
-using ASampleApp.CosmosDB;
+using System.Windows.Input;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
+using Xamarin.Forms;
+
+using ASampleApp.Models;
+using ASampleApp.CosmosDB;
 
 namespace ASampleApp
 {

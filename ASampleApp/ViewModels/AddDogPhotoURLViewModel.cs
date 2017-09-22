@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Windows.Input;
-using ASampleApp.CosmosDB;
 using ASampleApp.Models;
+using ASampleApp.CosmosDB;
+using System.Windows.Input;
+
 using Plugin.Media;
 using Plugin.Media.Abstractions;
+
 using Xamarin.Forms;
 
 namespace ASampleApp

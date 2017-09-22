@@ -1,8 +1,11 @@
 ﻿//METHOD 1 - Observable Collection
 using System;
 using System.Threading.Tasks;
-using ASampleApp.Models;
+
 using Xamarin.Forms;
+
+using ASampleApp.Models;
+
 namespace ASampleApp
 {
 	public class DogListMVVMPage : BaseContentPage<DogListMVVMViewModel>

@@ -1,19 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
-using ASampleApp.BlobStorage;
-using ASampleApp.Data;
-using ASampleApp.Models;
-using ASampleApp.Pages;
-using Microsoft.WindowsAzure.Storage.Blob;
+using System.Collections.Generic;
+
 using Xamarin.Forms;
-using ASampleApp.Constants;
 
 using Microsoft.Azure.Mobile;
-using Microsoft.Azure.Mobile.Analytics;
 using Microsoft.Azure.Mobile.Crashes;
-using System.Net.Http;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.WindowsAzure.Storage.Blob;
+
+using ASampleApp.Data;
+using ASampleApp.Pages;
+using ASampleApp.Models;
+using ASampleApp.Constants;
+using ASampleApp.BlobStorage;
 
 namespace ASampleApp
 {

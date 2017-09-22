@@ -1,6 +1,7 @@
 ﻿////This is for SQLite
 
 using System;
+
 using SQLite;
 
 namespace ASampleApp.Models

@@ -13,8 +13,11 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using ASampleApp.Models;
+
 using Xamarin.Forms;
+
+using ASampleApp.Models;
+
 namespace ASampleApp
 {
 	public class DogListPhotoBlobPage : BaseContentPage<DogListPhotoBlobViewModel>

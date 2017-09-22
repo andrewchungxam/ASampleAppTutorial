@@ -1,5 +1,7 @@
 ﻿using System;
+
 using Xamarin.Forms;
+
 namespace ASampleApp
 {
 	public abstract class BaseContentPage<T>: ContentPage where T: BaseViewModel, new() 

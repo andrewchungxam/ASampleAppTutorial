@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
-using System.Threading.Tasks;
+using System.Net.Http;
 using System.Windows.Input;
+using System.Threading.Tasks;
+using System.Diagnostics.Contracts;
+
 using Xamarin.Forms;
-//using System.Windows.Input;
 
 using ASampleApp.Data;
 using ASampleApp.CosmosDB;
-using System.Net.Http;
 
 namespace ASampleApp
 {

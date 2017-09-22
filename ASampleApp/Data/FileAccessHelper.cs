@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace ASampleApp.Data
 {
     public static class FileAccessHelper

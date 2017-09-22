@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Windows.Input;
-using ASampleApp.CosmosDB;
-using Plugin.Media;
-using Plugin.Media.Abstractions;
+
 using Xamarin.Forms;
 
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+
+using ASampleApp.CosmosDB;
 
 namespace ASampleApp.ViewModels
 {

@@ -55,7 +55,7 @@ namespace ASampleApp
             //_firstEntry = new Entry () {Placeholder = "Dog Name"};
             //_secondEntry = new Entry() { Placeholder = "Fur color" };
 
-			_firstButton = new Button () { Text = "Clear Cosmos DB" };
+			_firstButton = new Button () { Text = "Clear Cosmos and Local DB" };
             _clearLocalDBButton = new Button() { Text = "Clear Local DB" };
 
 
@@ -100,7 +100,8 @@ namespace ASampleApp
 					//_firstEntry,
 					//_secondEntry,
 					_firstButton,
-                    _clearLocalDBButton,
+                    //_clearLocalDBButton, //COMBINE THE COSMOS DB AND LOCAL DB DELETION
+
 					//_goToDogListButton,
 
 					_emptyLabel,

@@ -168,7 +168,46 @@ namespace ASampleApp.ViewModels
 				return;
             }
             else
-                return;
+            {
+
+				//ADD TO DOG REP BLOB.ADD NEW DOG PHOTO BLOB SOURCE (THIS.FIRSTENTRYTEXT, THIS.SECONDENTRYTEXT, THIS.BLOBURL);
+				//MODIFY THIS METHOD TO REFLECT BLOB NOT BASE 64
+				// PUTTING THIS INTO THE DATABASE
+				//
+				//              App.DogRepBaseSixtyFour.AddNewDogPhotoSourceB64(this.FirstEntryText, this.SecondEntryText, this.PhotoSourceBaseSixtyFourEntry); //this.PhotoSourceEntry);
+
+				//NOTE THAT SETTING PHOTOURLENTRY -> WILL AUTOMATICALLY SET THE PHOTOSOURCE ENTRY 
+				App.DogRepBlob.AddNewDogPhotoURLBlob(this.FirstEntryText, this.SecondEntryText, this.PhotoSourceEntry); //this.PhotoSourceEntry);
+
+				//MODIFY THIS METHOD TO REFLECT BLOB NOT BASE 64
+				AddLastDogToCosmosDBAsync();
+
+				//MODIFY THIS METHOD TO REFLECT BLOB NOT BASE 64
+				//ADDING THIS TO THE TOP OF THE PAGE
+				//string _lastNameString = App.DogRepBaseSixtyFour.GetLastDogB64().Name;
+				//string _lastNameStringAdd = System.String.Format("{0} added to the list!", _lastNameString);
+				//this.FirstLabel = _lastNameStringAdd;
+
+				string _lastNameString = App.DogRepBlob.GetLastDogBlob().Name;
+				string _lastNameStringAdd = System.String.Format("{0} added to the list!", _lastNameString);
+				this.FirstLabel = _lastNameStringAdd;
+
+				//MODIFY THIS METHOD TO REFLECT BLOB NOT BASE 64
+				//ADD THE LAST DOG TO THE ViewModel
+				//var tempLastDog = App.DogRepBaseSixtyFour.GetLastDogB64();
+				//App.MyDogListPhotoBase64Page.MyViewModel._observableCollectionOfDogs.Add(tempLastDog);
+
+				var tempLastDog = App.DogRepBlob.GetLastDogBlob();
+
+				//App.MyDogListPhotoBase64Page.MyViewModel._observableCollectionOfDogs.Add(tempLastDog);
+				App.MyDogListPhotoBlobPage.MyViewModel._observableCollectionOfDogs.Add(tempLastDog);
+
+
+				return;
+            }
+
+
+
 		}
 
         public static void RunBlobMethod(MediaFile _file)

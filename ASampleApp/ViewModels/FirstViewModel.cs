@@ -54,7 +54,8 @@ namespace ASampleApp
         void OnMySecondFavoriteAction()
         {
             //DELETE THE LOCAL FILES
-//            App.DogPhotoRep.DeleteAllDogsPhoto();
+            App.DogPhotoRep.DeleteAllDogsPhoto();
+            App.DogRepBlob.DeleteAllDogsPhoto();
             App.MyDogListPhotoPage.MyViewModel.DeleteAllDogsFromList();
             App.MyDogListPhotoBlobPage.MyViewModel.DeleteAllDogsFromList();
 
@@ -64,8 +65,12 @@ namespace ASampleApp
 
         void OnMyFavoriteAction()
         {
+            //DELETE FROM COSMOS DB
             HttpRequestMessage myDeleteRequest = new HttpRequestMessage(HttpMethod.Delete, String.Format("http://asampleapptutorial.azurewebsites.net/api/DeleteAllRecords"));
             App.myHttpClient.SendAsync(myDeleteRequest);
+
+            //DELETE LOCAL DB
+            OnMySecondFavoriteAction();
     
    //         //ADD NEW DOG
    //         App.DogRep.AddNewDog(this.FirstEntryText, this.SecondEntryText);

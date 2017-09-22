@@ -59,12 +59,10 @@ namespace ASampleApp
 			{
 				DeleteDogFromListAction(dog);
 			};
-
-
-
 		}
 
-        private async void DeleteDogFromListAction(object obj)
+
+		private async void DeleteDogFromListAction(object obj)
         {
             Debug.WriteLine("DELETE DOG FROM LIST ACTION");
 

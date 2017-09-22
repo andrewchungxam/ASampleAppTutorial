@@ -64,6 +64,40 @@ namespace ASampleApp.Data
 			sqliteConnection.Delete(dog);
 		}
 
+		public void DeleteAllDogsPhoto()
+		{
+			var query = sqliteConnection.Table<Dog>();   //   Where(v => v.Id > -1);
+
+			foreach (var individualQuery in query)
+			{
+				sqliteConnection.Delete(individualQuery);
+				//THIS SHoULD BE USING THIS METHOD SO IT GETS REFLECTED IN BOTH MVVM AND COSMOS:
+				//private async void DeleteDogFromListAction(object obj)
+				//{
+				//  Debug.WriteLine("DELETE DOG FROM LIST ACTION");
+				//  var myItem = obj as Dog;
+				//  Debug.WriteLine($"Removing dog {myItem}");
+
+				//  if (_observableCollectionOfDogs.Remove(myItem))
+				//  {
+				//      var myCosmosDog = DogConverter.ConvertToCosmosDog(myItem);
+				//      await CosmosDBService.DeleteCosmosDogAsync(myCosmosDog);
+				//  }
+				//  else
+				//  {
+				//      Debug.WriteLine($"Dog not reomved from observable collection {myItem}");
+				//  }
+				//}
+			}
+		}
+
+
+
+
+
+
+
+
 		public void AddNewDogPhotoURLBlob(string name, string furColor, string dogURLBlob)
 		{
             sqliteConnection.Insert(new Dog { Name = name, FurColor = furColor, DogPictureURLBlob = dogURLBlob });

@@ -1,0 +1,361 @@
+app.EnterText("Dog Name", "Rover");
+app.DismissKeyboard();
+app.EnterText("Fur color", "Brown");
+app.DismissKeyboard();
+app.Tap(x=>x.Class("UIButton").Marked("Submit"));
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));
+
+try{
+app.SwipeRightToLeft (c => c.Marked("Rover"));
+}
+catch {}
+
+app.Tap(x=>x.Marked("Back"));
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));
+
+Assert it does not exist
+
+
+
+
+
+app.SwipeRightToLeft(x=>x.Marked("T"), 0.40, 500)
+OR
+app.DragCoordinates(227, 76, 153, 76)
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////
+
+app.EnterText("Dog Name", "Rover");
+app.DismissKeyboard();
+app.EnterText("Fur color", "Brown");
+app.DismissKeyboard();
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));
+app.Tap(x=>x.Class("UIButton").Marked("Submit"));
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));
+
+TRY
+app.SwipeRightToLeft (c => c.Marked("Dog Name"));
+OR
+app.SwipeRightToLeft(x=>x.Marked("T"), 0.40, 500)
+OR
+app.DragCoordinates(227, 76, 153, 76)
+
+
+app.Tap(x=>x.Marked("Back"));
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));
+
+Assert it does not exist
+
+
+
+
+
+
+
+app.Flash("*");
+app.Flash();
+
+
+
+app.Tap(x=>x.Marked("Submit");
+app.Flash(x=>x.Marked("Submit");
+app.Query(x => x.All("*").Class("UIButton").Text("Submit"));;
+app.Query(x => x.Class("UIButton").Text("Submit"));;
+app.Flash("*");
+app.Flash();
+app.Flash(x=>x.Class("UIButton"));
+app.Flash(x=>x.Class("UIButton").Marked("Submit"));
+
+
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));;
+app.Tap(x=>x.Marked("Back"));;
+app.EnterText("Dog Name", "Dog Name");;
+app.DismissKeyboard();;
+app.EnterText("Fur color", "Brown");;
+app.DismissKeyboard();;
+app.Tap(x=>x.Class("UIButton").Marked("Submit"));;
+app.Flash (c => c.Marked("Do Name, Brown"));;
+app.Flash (c => c.Marked("Do Name"));;
+app.Flash (c => c.Marked("Do Name").Index(0));;
+app.Tap(x=>x.Marked("Delete"));
+
+app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));;
+app.Tap(x=>x.Marked("Back"));;
+app.EnterText("Dog Name", "Dog Name");;
+app.DismissKeyboard();;
+app.EnterText("Fur color", "Brown");;
+app.DismissKeyboard();;
+app.Tap(x=>x.Class("UIButton").Marked("Submit"));;
+app.Flash (c => c.Marked("Do Name, Brown"));;
+app.Flash (c => c.Marked("Do Name"));;
+app.Flash (c => c.Marked("Do Name").Index(0));;
+app.Tap(x=>x.Marked("Delete"));
+
+app.SwipeRightToLeft (c => c.Marked("Name"));
+
+Last login: Thu Aug 24 16:54:05 on ttys003
+You have mail.
+/Library/Frameworks/Mono.framework/Commands/mono "/var/folders/f7/dp4rpx997kgfjnyk1rjpd3gh0000gn/T/uitest/repl/xut-repl.exe" ios "/Users/andrewc/Github/ASampleAppSeventeen/ASampleApp/ASampleApp.UITests/bin/Debug/Xamarin.UITest.dll" "http://127.0.0.1:37265/" "266618DD-B7AB-4C32-919F-09E9AFB0A6C6" True
+MacBook-Pro-AC:~ andrewc$ /Library/Frameworks/Mono.framework/Commands/mono "/var/folders/f7/dp4rpx997kgfjnyk1rjpd3gh0000gn/T/uitest/repl/xut-repl.exe" ios "/Users/andrewc/Github/ASampleAppSeventeen/ASampleApp/ASampleApp.UITests/bin/Debug/Xamarin.UITest.dll" "http://127.0.0.1:37265/" "266618DD-B7AB-4C32-919F-09E9AFB0A6C6" True
+
+
+
+
+
+
+
+
+
+
+
+
+
+Full log file: /var/folders/f7/dp4rpx997kgfjnyk1rjpd3gh0000gn/T/uitest/log-2017-08-24_17-16-41-998.txt
+iOS test running Xamarin.UITest version: 2.0.10
+Skipping IDE integration as important properties are configured. To force IDE integration, add .PreferIdeSettings() to ConfigureApp.
+Skipping local screenshots. Can be enabled with EnableScreenshots() when configuring app.
+Initializing iOS app on http://127.0.0.1:37265/.
+Test server version: 0.20.7
+
+App has been initialized to the 'app' variable.
+Exit REPL with ctrl-c or see help for more commands.
+
+>>> tree                                                                        
+[CalabashRootView > ... > UILayoutContainerView]                                
+  [UINavigationTransitionView > ... > Xamarin_Forms_Platform_iOS_Platform_DefaultRenderer]
+    [Xamarin_Forms_Platform_iOS_EntryRenderer > UITextField]
+      [_UITextFieldRoundedRectBackgroundViewNeue]
+      [UITextFieldLabel] label: "Dog Name",  text: "Dog Name"
+      [UIAccessibilityTextFieldElement] text: "Dog Name"
+    [Xamarin_Forms_Platform_iOS_EntryRenderer > UITextField]
+      [_UITextFieldRoundedRectBackgroundViewNeue]
+      [UITextFieldLabel] label: "Fur color",  text: "Fur color"
+      [UIAccessibilityTextFieldElement] text: "Fur color"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Submit"
+        [UIButtonLabel] label: "Submit",  text: "Submit"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Go to Dog List"
+        [UIButtonLabel] label: "Go to Dog List",  text: "Go to Dog List"
+    [Xamarin_Forms_Platform_iOS_LabelRenderer > UILabel]
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Add Dog Photo"
+        [UIButtonLabel] label: "Add Dog Photo",  text: "Add Dog Photo"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Add Dog Photo URL"
+        [UIButtonLabel] label: "Add Dog Photo URL",  text: "Add Dog Photo URL"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Go to Dog Photo List"
+        [UIButtonLabel] label: "Go to Dog Photo List",  text: "Go to Dog Photo List"
+    [Xamarin_Forms_Platform_iOS_LabelRenderer > UILabel]
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Add Dog Photo Blob"
+        [UIButtonLabel] label: "Add Dog Photo Blob",  text: "Add Dog Photo Blob"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+                                                                                
+        [UIButtonLabel] label: "Go to Dog Photo Blob List",  text: "Go to Dog Photo Blob List"
+    [Xamarin_Forms_Platform_iOS_ButtonRenderer]
+      [UIButton] label: "Click to Crash App"
+        [UIButtonLabel] label: "Click to Crash App",  text: "Click to Crash App"
+  [UINavigationBar] id: "A Sample App 16"
+    [_UIBarBackground > UIImageView]
+    [UINavigationItemView] label: "A Sample App 16"
+      [UILabel] label: "A Sample App 16",  text: "A Sample App 16"
+>>> app.Tap(x=>x.Class("UIButton").Marked("Go to Dog List"));                   
+Tapping element matching Class("UIButton").Marked("Go to Dog List") at coordinates [ 187.5, 234 ].                                                              >>> tree                                                                        [CalabashRootView > ... > UILayoutContainerView]                                  [UINavigationTransitionView > ... > Xamarin_Forms_Platform_iOS_ListViewRenderer]                                                                                  [UITableView] label: "Empty list"                                                 [UITableViewWrapperView]                                                        [_UITableViewCellSeparatorView]                                                 [_UITableViewCellSeparatorView]                                          
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+      [_UITableViewCellSeparatorView]
+  [UINavigationBar] id: "Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingView"
+    [_UIBarBackground > UIImageView]
+    [UINavigationItemButtonView] label: "A Sample App 16"
+      [UILabel] label: "A Sample App 16",  text: "A Sample App 16"
+    [_UINavigationBarBackIndicatorView] label: "Back"
+>>> app.Tap(x=>x.Marked("Back"));                                               
+Tapping element matching Marked("Back") at coordinates [ 14.5, 42 ].            >>>                                                                             >>> app.EnterText("Dog Name", "Dog Name");                                      Entering text 'Dog Name' in element matching Marked("Dog Name") at coordinates [ 187.5, 104.25 ].                                                               >>> app.DismissKeyboard();                                                      Attempting to dismiss keyboard                                                  >>> app.EnterText("Fur color", "Brown");                                        Entering text 'Brown' in element matching Marked("Fur color") at coordinates [ 187.5, 140.25 ].                                                                 >>> app.DismissKeyboard();                                                      Attempting to dismiss keyboard                                                  >>> app.Tap(x=>x.Class("UIButton").Marked("Submit"));                           Tapping element matching Class("UIButton").Marked("Submit") at coordinates [ 187.5, 184 ].                                                                      >>> tree                                                                        [CalabashRootView > ... > UILayoutContainerView]                                  [UINavigationTransitionView > ... > UITableView]                                  [UITableViewWrapperView > Xamarin_Forms_Platform_iOS_ContextActionsCell]          [UITableViewCellContentView > ... > Xamarin_Forms_Platform_iOS_ViewCellRenderer_ViewTableCell]                                                                    [UITableViewCellContentView > Xamarin_Forms_Platform_iOS_Platform_DefaultRenderer]                                                                     
+          [Xamarin_Forms_Platform_iOS_LabelRenderer]
+            [UILabel] label: "Do Name",  text: "Do Name"
+          [Xamarin_Forms_Platform_iOS_LabelRenderer]
+            [UILabel] label: "Brown",  text: "Brown"
+        [UITableTextAccessibilityElement] label: "Do Name, Brown"
+      [_UITableViewCellSeparatorView]
+      [UIAccessibilityElementMockView]
+        [UITableTextAccessibilityElement] label: "Do Name, Brown"
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [_UITableViewCellSeparatorView]
+    [UITableViewCellAccessibilityElement > UIAccessibilityElementMockView]
+      [UITableTextAccessibilityElement] label: "Do Name, Brown"
+  [UINavigationBar] id: "Xamarin_Forms_Platform_iOS_NavigationRenderer_ParentingView"
+                                                                                                                  
+    [UINavigationItemButtonView] label: "A Sample App 16"
+      [UILabel] label: "A Sample App 16",  text: "A Sample App 16"
+    [_UINavigationBarBackIndicatorView] label: "Back"
+>>> app.SwipeRightToLeft (c => c.Id ("Do Name, Brown"));                                                          
+Error while performing Swipe(Id("Do Name, Brown"), "left", 0.67, 500, True)                                       Exception: System.Exception: Unable to swipe left. Query for Id("Do Name, Brown") gave no results.                  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0002a] in <a87c90c09452445fbb922acae3a82f00>:0                                                                                                           at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0     at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0                                                               
+Error while performing SwipeRightToLeft(Id("Do Name, Brown"), 0.67, 500, True)
+Exception: System.Exception: Error while performing Swipe(Id("Do Name, Brown"), "left", 0.67, 500, True) ---> System.Exception: Unable to swipe left. Query for Id("Do Name, Brown") gave no results.
+  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0002a] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+   --- End of inner exception stack trace ---
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00060] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.Swipe (System.Func`2[T,TResult] query, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x00032] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<SwipeRightToLeft>c__AnonStorey3.<>m__0 () [0x00000] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+Exception: Error while performing SwipeRightToLeft(Id("Do Name, Brown"), 0.67, 500, True)
+>>> app.SwipeRightToLeft (c => c.Marked("Do Name, Brown"));                                                       
+Error while performing Swipe(Marked("Do Name, Brown"), "left", 0.67, 500, True)                                   Exception: System.Exception: Unable to swipe left. Query for Marked("Do Name, Brown") gave no results.           
+  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0002a] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+Error while performing SwipeRightToLeft(Marked("Do Name, Brown"), 0.67, 500, True)
+Exception: System.Exception: Error while performing Swipe(Marked("Do Name, Brown"), "left", 0.67, 500, True) ---> System.Exception: Unable to swipe left. Query for Marked("Do Name, Brown") gave no results.
+  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0002a] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+   --- End of inner exception stack trace ---
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00060] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.Swipe (System.Func`2[T,TResult] query, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x00032] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<SwipeRightToLeft>c__AnonStorey3.<>m__0 () [0x00000] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+Exception: Error while performing SwipeRightToLeft(Marked("Do Name, Brown"), 0.67, 500, True)
+>>> app.Flash (c => c.Marked("Do Name, Brown"));                                                                  
+Flashing query for Marked("Do Name, Brown") gave 0 results.                                                       [                                                                                                                                                                                                                                   ]                                                                                                                                                                                                                                   >>> app.Flash (c => c.Marked("Do Name"));                                                                         Flashing query for Marked("Do Name") gave 1 results.                                                              [                                                                                                                
+    [0] {
+        Id => null,
+        Description => "<UILabel: 0x7fc86e41f7b0; frame = (0 0; 370 20.5); text = 'Do Name'; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x608000287670>>",
+        Rect => {
+            Width => 370,
+            Height => 20.5,
+            X => 5,
+            Y => 66,
+            CenterX => 190,
+            CenterY => 76.25
+        },
+        Label => "Do Name",
+        Text => "Do Name",
+        Class => "UILabel",
+        Enabled => true
+    }
+]
+
+>>> app.SwipeRightToLeft (c => c.Marked("Do Name"));                                                              
+Swiping left on first element matching Marked("Do Name") at coordinates [ 190, 76 ].                              Swiping from (313, 76) to (67, 76)                                                                                Error while performing Swipe(Marked("Do Name"), "left", 0.67, 500, True)                                          Exception: System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'void' to 'object'                                                      at (wrapper dynamic-method) System.Object:CallSite.Target (System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object)                                                                                 at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet] (System.Runtime.CompilerServices.CallSite site, T0 arg0) [0x00104] in <9da65c3aa2654e53b5f11b79677182e0>:0 
+  at Xamarin.UITest.XDB.Services.iOSDeviceAgentService+<DragAsync>c__async2.MoveNext () [0x003b5] in <a87c90c09452445fbb922acae3a82f00>:0 
+   --- End of inner exception stack trace ---
+  at System.Threading.Tasks.Task.ThrowIfExceptional (System.Boolean includeTaskCanceledExceptions) [0x00011] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at System.Threading.Tasks.Task.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x00043] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at System.Threading.Tasks.Task.Wait () [0x00000] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at Xamarin.UITest.iOS.iOSGestures.SwipeCoordinates (System.Int32 fromX, System.Int32 toX, System.Int32 fromY, System.Int32 toY, System.Boolean withInertia, System.TimeSpan duration) [0x000de] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.PerformSwipe (Xamarin.UITest.Queries.IRect target, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia, System.String codeString) [0x0026a] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0004b] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+---> (Inner Exception #0) Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'void' to 'object'
+  at (wrapper dynamic-method) System.Object:CallSite.Target (System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object)
+  at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet] (System.Runtime.CompilerServices.CallSite site, T0 arg0) [0x00104] in <9da65c3aa2654e53b5f11b79677182e0>:0 
+  at Xamarin.UITest.XDB.Services.iOSDeviceAgentService+<DragAsync>c__async2.MoveNext () [0x003b5] in <a87c90c09452445fbb922acae3a82f00>:0 <---
+
+Error while performing SwipeRightToLeft(Marked("Do Name"), 0.67, 500, True)
+Exception: System.Exception: Error while performing Swipe(Marked("Do Name"), "left", 0.67, 500, True) ---> System.AggregateException: One or more errors occurred. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot implicitly convert type 'void' to 'object'
+  at (wrapper dynamic-method) System.Object:CallSite.Target (System.Runtime.CompilerServices.Closure,System.Runtime.CompilerServices.CallSite,object)
+  at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet] (System.Runtime.CompilerServices.CallSite site, T0 arg0) [0x00104] in <9da65c3aa2654e53b5f11b79677182e0>:0 
+  at Xamarin.UITest.XDB.Services.iOSDeviceAgentService+<DragAsync>c__async2.MoveNext () [0x003b5] in <a87c90c09452445fbb922acae3a82f00>:0 
+   --- End of inner exception stack trace ---
+  at System.Threading.Tasks.Task.ThrowIfExceptional (System.Boolean includeTaskCanceledExceptions) [0x00011] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at System.Threading.Tasks.Task.Wait (System.Int32 millisecondsTimeout, System.Threading.CancellationToken cancellationToken) [0x00043] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at System.Threading.Tasks.Task.Wait () [0x00000] in <c9f8153c41de4f8cbafd0e32f9bf6b28>:0 
+  at Xamarin.UITest.iOS.iOSGestures.SwipeCoordinates (System.Int32 fromX, System.Int32 toX, System.Int32 fromY, System.Int32 toY, System.Boolean withInertia, System.TimeSpan duration) [0x000de] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.PerformSwipe (Xamarin.UITest.Queries.IRect target, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia, System.String codeString) [0x0026a] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.Swipe (Xamarin.UITest.Queries.AppQuery appQuery, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x0004b] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<Swipe>c__AnonStorey5.<>m__0 () [0x00017] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+   --- End of inner exception stack trace ---
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00060] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp.Swipe (System.Func`2[T,TResult] query, System.String direction, System.Double swipePercentage, System.Int32 swipeSpeed, System.Boolean withInertia) [0x00032] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.SharedApp+<SwipeRightToLeft>c__AnonStorey3.<>m__0 () [0x00000] in <a87c90c09452445fbb922acae3a82f00>:0 
+  at Xamarin.UITest.Utils.ErrorReporting.With (System.Action func, System.Object[] args, System.String memberName) [0x00006] in <a87c90c09452445fbb922acae3a82f00>:0 
+Exception: Error while performing SwipeRightToLeft(Marked("Do Name"), 0.67, 500, True)
+>>> app.Flash (c => c.Marked("Do Name").Index(0);                                                                 
+(1,45): error CS1525: Unexpected symbol `;', expecting `)' or `,'                                                 >>> app.Flash (c => c.Marked("Do Name").Index(0));                                                               
+>>> app.Flash (c => c.Marked("Do Name").Index(0));                                                               
+Flashing query for Marked("Do Name").Index(0) gave 1 results.
+[
+    [0] {
+        Id => null,
+        Description => "<UILabel: 0x7fc86e41f7b0; frame = (0 0; 370 20.5); text = 'Do Name'; userInteractionEnabled = NO; layer = <_UILabelLayer: 0x608000287670>>",
+        Rect => {
+            Width => 370,
+            Height => 20.5,
+            X => -77.5,
+            Y => 66,
+            CenterX => 107.5,
+            CenterY => 76.25
+        },
+        Label => "Do Name",
+        Text => "Do Name",
+        Class => "UILabel",
+        Enabled => true
+    }
+]
+
+>>> tree   
+
+
+
+
+
+Swipe(
+1 Marked("T"), 
+2 "left", 
+3 0.67, 
+4 500, 
+5 -True)
+
+
+ at Xamarin.UITest.SharedApp.Swipe 
+(
+1 Xamarin.UITest.Queries.AppQuery appQuery, 
+2 System.String direction, 
+3 System.Double swipePercentage, 
+4 System.Int32 swipeSpeed, 
+5 -System.Boolean withInertia)
+
+
+app.Swipe(
+
+
+
+
+
+
+
+
+
+Swiping from (227, 76) to (153, 76) 
+
+
